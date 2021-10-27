@@ -21,4 +21,5 @@ export enum Code {
   PRESTASHOP = "PrestaShop",
   WEBPACK = "Webpack",
   REDUX = "Redux",
+  BABDEL = "Babel",
 }
