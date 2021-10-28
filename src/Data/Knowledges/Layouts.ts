@@ -1,25 +1,56 @@
+import { Code } from "../../Helpers/Code";
 import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import Knowledge from "../../Models/Knowledge";
-import { getKnowledgeBootstrap } from "./Layouts/Bootstrap";
-import { getKnowledgeCSS } from "./Layouts/CSS";
-import { getKnowledgeHMTL } from "./Layouts/HTML";
-import { getKnowledgePUG } from "./Layouts/Pug";
-import { getKnowledgeSCSS } from "./Layouts/SCSS";
-import { getKnowledgeSmarty } from "./Layouts/Smarty";
-import { getKnowledgeTwig } from "./Layouts/Twig";
-import { getKnowledgeVueJS } from "./Layouts/VueJS";
+import { IKnowledgeData } from "../../Interfaces/IKnowledgeData";
 
-export const getKnowledgeLayouts = (): Knowledge[] => {
-  const d = [
-    getKnowledgeBootstrap(),
-    getKnowledgeCSS(),
-    getKnowledgeHMTL(),
-    getKnowledgePUG(),
-    getKnowledgeSCSS(),
-    getKnowledgeSmarty(),
-    getKnowledgeTwig(),
-    getKnowledgeVueJS(),
-  ];
-  d.forEach((v) => v.setType(KnowledgeType.LAYOUT));
-  return d;
-};
+const type = KnowledgeType.LAYOUT;
+
+export const layoutsData: IKnowledgeData[] = [
+  {
+    type,
+    name: Code.BOOTSTRAP,
+    level: 5,
+    years: "2014-01-01",
+  },
+  {
+    type,
+    name: Code.CSS,
+    level: 5,
+    years: "2002-01-01",
+  },
+  {
+    type,
+    name: Code.HTML,
+    level: 5,
+    years: "2002-01-01",
+  },
+  {
+    type,
+    name: Code.PUG,
+    level: 4,
+    years: "2018-01-01",
+  },
+  {
+    type,
+    name: Code.SCSS,
+    level: 5,
+    years: "2014-01-01",
+  },
+  {
+    type,
+    name: Code.SMARTY,
+    level: 5,
+    years: "2011-01-01",
+  },
+  {
+    type,
+    name: Code.TWIG,
+    level: 4,
+    years: "2018-01-01",
+  },
+  {
+    type,
+    name: Code.VUE,
+    level: 4,
+    years: "2019-01-01",
+  },
+];

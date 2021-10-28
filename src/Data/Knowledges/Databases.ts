@@ -1,17 +1,32 @@
+import { Code } from "../../Helpers/Code";
 import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import Knowledge from "../../Models/Knowledge";
-import { getKnowledgeAPI } from "./Databases/API";
-import { getKnowledgeMongoDB } from "./Databases/MongoDB";
-import { getKnowledgeMongoose } from "./Databases/Mongoose";
-import { getKnowledgeMySQL } from "./Databases/MySQL";
+import { IKnowledgeData } from "../../Interfaces/IKnowledgeData";
 
-export const getKnowledgeDataBases = (): Knowledge[] => {
-  const d = [
-    getKnowledgeAPI(),
-    getKnowledgeMongoDB(),
-    getKnowledgeMongoose(),
-    getKnowledgeMySQL(),
-  ];
-  d.forEach((v) => v.setType(KnowledgeType.DATABASE));
-  return d;
-};
+const type = KnowledgeType.DATABASE
+
+export const databasesData: IKnowledgeData[] = [
+  {
+    type,
+    name: Code.API,
+    level: 5,
+    years: "2014-01-01",
+  },
+  {
+    type,
+    name: Code.MONGODB,
+    level: 4,
+    years: "2018-01-01",
+  },
+  {
+    type,
+    name: Code.MONGOOSE,
+    level: 4,
+    years: "2018-01-01",
+  },
+  {
+    type,
+    name: Code.MYSQL,
+    level: 5,
+    years: "2004-01-01",
+  },
+];

@@ -1,17 +1,16 @@
+import { JobList } from "../Helpers/JobList";
 import Task from "./Task";
 
 export default class Job {
-  public name: string;
-  public description: string;
-  public position: string;
-  public from: string;
-  public to: string | null;
-  public tasks: Task[];
+  public name: JobList;
+  public description: string = "";
+  public position: string = "";
+  public from: string = "";
+  public to: string = "";
+  public tasks: Task[] = [];
 
-  public constructor(name: string) {
+  public constructor(name: JobList) {
     this.name = name;
-    this.description = this.position = this.from = this.to = "";
-    this.tasks = [];
   }
 
   public setDescription(s: string): void {

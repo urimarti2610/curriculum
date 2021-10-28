@@ -1,17 +1,32 @@
+import { Code } from "../../Helpers/Code";
 import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import Knowledge from "../../Models/Knowledge";
-import { getKnowledgeBabel } from "./Codes/Babel";
-import { getKnowledgeJavascript } from "./Codes/Javascript";
-import { getKnowledgePHP } from "./Codes/Php";
-import { getKnowledgeReactJS } from "./Codes/ReactJS";
+import { IKnowledgeData } from "../../Interfaces/IKnowledgeData";
 
-export const getKnowledgeCodes = (): Knowledge[] => {
-  const d = [
-    getKnowledgeJavascript(),
-    getKnowledgePHP(),
-    getKnowledgeReactJS(),
-    getKnowledgeBabel(),
-  ];
-  d.forEach((v) => v.setType(KnowledgeType.CODE));
-  return d;
-};
+const type = KnowledgeType.CODE
+
+export const codesData: IKnowledgeData[] = [
+  {
+    type,
+    name: Code.BABEL,
+    level: 2,
+    years: "2019-01-01",
+  },
+  {
+    type,
+    name: Code.JAVASCRIPT,
+    level: 5,
+    years: "2009-01-01",
+  },
+  {
+    type,
+    name: Code.PHP,
+    level: 5,
+    years: "2004-01-01",
+  },
+  {
+    type,
+    name: Code.REACT,
+    level: 4.5,
+    years: "2018-01-01",
+  },
+];

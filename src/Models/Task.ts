@@ -1,16 +1,20 @@
-export default class Task {
-  public name: string;
-  public description: string;
-  public like: boolean;
-  public type: string = "";
+import { KnowledgeType } from "../Helpers/KnowledgeType";
 
-  public constructor(name: string, description: string, like: boolean = true) {
+export default class Task {
+  public name: string = "";
+  public description: string = "";
+  public like: boolean;
+  public type: KnowledgeType;
+
+  public constructor(
+    name: string,
+    description: string,
+    type: KnowledgeType,
+    like: boolean = true
+  ) {
     this.name = name;
     this.description = description;
     this.like = like;
-  }
-
-  public setType(s: string): void {
-    this.type = s;
+    this.type = type;
   }
 }

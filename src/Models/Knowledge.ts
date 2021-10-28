@@ -6,14 +6,13 @@ import { getYears } from "../Helpers/Years";
 
 export default class Knowledge {
   public name: Program | Methodology | Code;
-  public years: number;
-  public level: number;
-  public type: KnowledgeType | null;
+  public years: number = 0;
+  public level: number = 0;
+  public from: string = '';
+  public type: KnowledgeType | null = null;
 
   public constructor(name: Program | Methodology | Code) {
     this.name = name;
-    this.type = null;
-    this.years = this.level = 0;
   }
 
   public setLevel(level: number): void {
@@ -21,6 +20,7 @@ export default class Knowledge {
   }
 
   public setYears(years: string): void {
+    this.from = years;
     this.years = getYears(years);
   }
 

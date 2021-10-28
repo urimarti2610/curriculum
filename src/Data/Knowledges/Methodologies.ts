@@ -1,15 +1,26 @@
+import { Methodology } from "../../Helpers/Methodology";
 import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import Knowledge from "../../Models/Knowledge";
-import { getKnowledgeAgile } from "./Methodologies/Agile";
-import { getKnowledgeSCRUM } from "./Methodologies/SCRUM";
-import { getKnowledgeSOLID } from "./Methodologies/SOLID";
+import { IKnowledgeData } from "../../Interfaces/IKnowledgeData";
 
-export const getKnowledgeMethodologies = (): Knowledge[] => {
-  const d = [
-    getKnowledgeAgile(),
-    getKnowledgeSCRUM(),
-    getKnowledgeSOLID()
-  ];
-  d.forEach((v) => v.setType(KnowledgeType.METHODOLOGY));
-  return d;
-};
+const type = KnowledgeType.METHODOLOGY
+
+export const methodologiesData: IKnowledgeData[] = [
+  {
+    type,
+    name: Methodology.AGILE,
+    level: 5,
+    years: "2018-01-01",
+  },
+  {
+    type,
+    name: Methodology.SCRUM,
+    level: 4,
+    years: "2018-01-01",
+  },
+  {
+    type,
+    name: Methodology.SOLID,
+    level: 4,
+    years: "2017-01-01",
+  },
+]
