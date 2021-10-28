@@ -1,3 +1,4 @@
+import { Color, getColor } from "../Helpers/Colors";
 import { KnowledgeType } from "../Helpers/KnowledgeType";
 
 export default class Task {
@@ -5,6 +6,8 @@ export default class Task {
   public description: string = "";
   public like: boolean;
   public type: KnowledgeType;
+  public open: boolean = true;
+  public color: Color;
 
   public constructor(
     name: string,
@@ -16,5 +19,8 @@ export default class Task {
     this.description = description;
     this.like = like;
     this.type = type;
+    this.color = this.getColor();
   }
+
+  private getColor = () => getColor(this.type);
 }

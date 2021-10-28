@@ -8,8 +8,9 @@ export default class Knowledge {
   public name: Program | Methodology | Code;
   public years: number = 0;
   public level: number = 0;
-  public from: string = '';
+  public from: string = "";
   public type: KnowledgeType | null = null;
+  public visible: boolean = true;
 
   public constructor(name: Program | Methodology | Code) {
     this.name = name;

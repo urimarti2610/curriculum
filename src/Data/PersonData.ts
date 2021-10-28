@@ -1,4 +1,4 @@
-import { IPersonData } from "../Interfaces/IPersonData";
+import { IPersonData } from "../Interfaces/Data/IPersonData";
 
 export const personData:IPersonData = {
   name: "Oriol",

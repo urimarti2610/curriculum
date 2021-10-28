@@ -1,0 +1,7 @@
+@import '../../style/variables.scss';
+
+#toggle {
+    position: fixed;
+    bottom: $padding / 2;
+    right: $padding / 2;
+}

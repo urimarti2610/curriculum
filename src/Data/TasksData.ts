@@ -1,4 +1,4 @@
-import { ITaskData } from "../Interfaces/ITaskData";
+import { ITaskData } from "../Interfaces/Data/ITaskData";
 import { TasksCodeData } from "./Tasks/TasksCodeData";
 import { TasksDatabaseData } from "./Tasks/TasksDatabaseData";
 import { TasksDesignData } from "./Tasks/TasksDesignData";

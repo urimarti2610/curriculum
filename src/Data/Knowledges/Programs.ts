@@ -1,6 +1,6 @@
 import { Program } from "../../Helpers/Program";
 import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { IKnowledgeData } from "../../Interfaces/IKnowledgeData";
+import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData";
 
 const type = KnowledgeType.PROGRAM;
 

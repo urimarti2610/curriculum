@@ -1,0 +1,12 @@
+@import '../../style/variables.scss';
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: $width;
+    margin: 0 auto;
+    position: relative;
+}

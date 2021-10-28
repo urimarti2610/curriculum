@@ -1,6 +1,6 @@
 import { JobList } from "../../Helpers/JobList";
 import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { ITaskData } from "../../Interfaces/ITaskData";
+import { ITaskData } from "../../Interfaces/Data/ITaskData";
 
 const type = KnowledgeType.DATABASE;
 

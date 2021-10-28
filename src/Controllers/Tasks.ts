@@ -1,6 +1,6 @@
 import { TasksData } from "../Data/TasksData";
 import { JobList } from "../Helpers/JobList";
-import { ITaskData } from "../Interfaces/ITaskData";
+import { ITaskData } from "../Interfaces/Data/ITaskData";
 import Task from "../Models/Task";
 
 export const getTasks = (job:JobList):Task[] => {

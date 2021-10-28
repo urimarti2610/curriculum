@@ -1,4 +1,4 @@
-import { IKnowledgeData } from "../Interfaces/IKnowledgeData"
+import { IKnowledgeData } from "../Interfaces/Data/IKnowledgeData"
 import { codesData } from "./Knowledges/Codes"
 import { databasesData } from "./Knowledges/Databases"
 import { frameworksData } from "./Knowledges/Frameworks"

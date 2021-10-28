@@ -1,0 +1,11 @@
+@import '../../style/variables.scss';
+@import '../../style/fonts.scss';
+
+.tag {
+    padding: $padding-btn;
+    border: 1px solid;
+    border-radius: $border-radius-btn;
+    position: absolute;
+    right: $padding;
+    font-size: $font-size / 1.5;
+}

@@ -1,5 +1,5 @@
 import { KnowledgeData } from "../Data/KnowledgeData";
-import { IKnowledgeData } from "../Interfaces/IKnowledgeData";
+import { IKnowledgeData } from "../Interfaces/Data/IKnowledgeData";
 import Knowledge from "../Models/Knowledge";
 
 export const getKnowledge = (): Knowledge[] => {

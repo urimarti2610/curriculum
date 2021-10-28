@@ -1,6 +1,6 @@
 import User from "../Models/User";
 import { getJobs } from "./Jobs";
-import { IPersonData } from "../Interfaces/IPersonData";
+import { IPersonData } from "../Interfaces/Data/IPersonData";
 import { getKnowledge } from "./Knowledges";
 
 export const setPerson = (person:IPersonData): User => {

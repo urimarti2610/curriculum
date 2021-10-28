@@ -1,0 +1,16 @@
+@import '../../style/colors.scss';
+@import '../../style/variables.scss';
+
+.knowledge-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $padding;
+
+    .knowledge {
+        position: relative;
+        padding: $padding;
+        border: 1px solid;
+    }
+
+}

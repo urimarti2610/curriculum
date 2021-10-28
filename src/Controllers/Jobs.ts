@@ -1,5 +1,5 @@
 import Job from "../Models/Job";
-import { IobjectJob } from "../Interfaces/IobjectJob";
+import { IobjectJob } from "../Interfaces/Controllers/IobjectJob";
 import { JobsData } from "../Data/JobsData";
 import { getTasks } from "./Tasks";
 
