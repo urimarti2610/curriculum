@@ -3,7 +3,7 @@ import React from "react";
 import { IClick } from "../../Interfaces/React/Body";
 
 export const ToggleTemplate = (props: IClick) => (
-  <span className="btn" id="toggle" onClick={() => props.parentClick()}>
+  <span className="btn btn-primary" id="toggle" onClick={() => props.parentClick()}>
     Cambiar tema
   </span>
 );

@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
 
     section {
+        overflow-x: hidden;
         background-color: $bg-color;
         color: $font-color;
         font-family: $font-family;
@@ -178,6 +179,16 @@ body {
         h4,
         h5 {
             margin: $padding / 4 0;
+            line-height: 1eM;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        .page {
+            max-width: 90%;
+            margin: 0 auto;
         }
     }
 }
