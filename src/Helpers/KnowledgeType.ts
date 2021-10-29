@@ -1,22 +1,23 @@
 import { getColorsLength } from "./Colors";
 
 export enum KnowledgeType {
-  CODE = "Code",
-  DESIGN = "Design",
-  METHODOLOGY = "Methodology",
-  DATABASE = "DataBase",
-  PROGRAM = "Program",
-  FRAMEWORK = "FrameWork",
-  LAYOUT = "Layout",
+  CODE = "Programación",
+  DESIGN = "Diseño",
+  METHODOLOGY = "Metodología",
+  DATABASE = "Bases de Datos",
+  DIRECTION = "Dirección y Gestión",
+  PROGRAM = "Programas",
+  FRAMEWORK = "FrameWorks & Librerías",
+  LAYOUT = "Maquetación",
   ALL = "Todos",
 }
 
-export const getKnowledgeTypes = ():KnowledgeType[] =>
+export const getKnowledgeTypes = (): KnowledgeType[] =>
   Object.values(KnowledgeType).map((v) => v);
 
 export const getColorKnowledge = (k: KnowledgeType): number => {
   let position = 0;
-  const r = getKnowledgeTypes().forEach((v, i) => {
+  getKnowledgeTypes().forEach((v, i) => {
     if (v === k) position = i;
   });
   return getFinalNumber(position);

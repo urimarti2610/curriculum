@@ -6,6 +6,7 @@ import { KnowledgeType } from "../../Helpers/KnowledgeType";
 import { FilterTypes } from "../_fragments/FilterTypes";
 import { FilterOrder } from "../_fragments/FilterOrder";
 import { OrderBy, OrderWay } from "../../Helpers/Order";
+import { Loading } from "../_fragments/Loading";
 
 export const KnowledgeList = (props: IKnowledges) => {
   const [knowledges, setKnowledges] = React.useState(props.knowledges);
@@ -14,16 +15,19 @@ export const KnowledgeList = (props: IKnowledges) => {
   const [filterOrderWay, setFilterOrderWay] = React.useState(OrderWay.DESC);
   const [loading, setLoading] = React.useState(false);
 
+  const reloadData = () => {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 400);
+  };
+  
   React.useEffect(() => {
-    setLoading(true)
-    filterData()
-    setTimeout(() => setLoading(false), 1)
+    filterData();
+    reloadData();
   }, [filterType]);
 
   React.useEffect(() => {
-    setLoading(true)
-    sortData()
-    setTimeout(() => setLoading(false), 1)
+    sortData();
+    reloadData();
   }, [filterOrderWay, filterOrderBy]);
 
   const setFiltersOrder = (orderBy: OrderBy, orderWay: OrderWay) => {
@@ -65,12 +69,10 @@ export const KnowledgeList = (props: IKnowledges) => {
 
   const renderKnowledges = () =>
     knowledges.map((value, index) =>
-      value.visible && !loading ? (
-        <KnowledgeElement key={index} knowledge={value} />
-      ) : null
+      value.visible ? <KnowledgeElement key={index} knowledge={value} /> : null
     );
 
-  return (
+  const renderContent = () => (
     <React.Fragment>
       <FilterTypes
         filterType={filterType}
@@ -85,4 +87,9 @@ export const KnowledgeList = (props: IKnowledges) => {
       <div className="knowledge-list">{renderKnowledges()}</div>
     </React.Fragment>
   );
+
+  if (!loading) {
+    return renderContent()
+  }
+  return <Loading />;
 };

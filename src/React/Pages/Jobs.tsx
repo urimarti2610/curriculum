@@ -7,8 +7,6 @@ import { Page } from "./Page";
 export const Jobs = (props: IJobs) => (
   <React.Fragment>
     <Page><Title title="Trabajos"/></Page>
-    <Page>
-      <JobList jobs={props.jobs} />
-    </Page>
+    <JobList jobs={props.jobs} />
   </React.Fragment>
 );

@@ -1,3 +1,5 @@
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { getKnowledgeTypes, KnowledgeType } from "../../Helpers/KnowledgeType";
 import { IFilterType } from "../../Interfaces/React/Fragments";
@@ -20,7 +22,9 @@ export const FilterTypes = (props: IFilterType) => {
 
   return (
     <div className="list">
-      <h5>Filtrar por:</h5>
+      <h5 style={{marginBottom: '1.5eM'}}>
+        <FontAwesomeIcon icon={faFilter} /> Filtrar por:
+      </h5>
       {renderButton(KnowledgeType.ALL)}
       {types.map((v, i) => {
         const c = props.knowledges.filter((f) => f.type === v);

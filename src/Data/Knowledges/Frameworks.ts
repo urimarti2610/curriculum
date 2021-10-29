@@ -19,6 +19,12 @@ export const frameworksData: IKnowledgeData[] = [
   },
   {
     type,
+    name: Code.WORDPRESS,
+    level: 4,
+    years: "2009-01-01",
+  },
+  {
+    type,
     name: Code.REDUX,
     level: 4,
     years: "2018-01-01",

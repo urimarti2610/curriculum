@@ -35,25 +35,4 @@ const TasksBiciescapa: ITaskData[] = [
   },
 ];
 
-const TasksFlick: ITaskData[] = [
-  {
-    type,
-    job: JobList.FLICK,
-    name: "Reunión con Proveedores",
-    description:
-      "Reuniones con distintos proveedores para analizar el mercado, configurar las compras y negociar las tarifas.",
-  },
-  {
-    type,
-    job: JobList.FLICK,
-    name: "Subcontratación de Servicios",
-    description:
-      "Buscar las mejores empresas para los servicios que se subcontrataban. Tales como anuncios online, generación de contenido para el Blog, Social Media...",
-    liked: false,
-  },
-];
-
-export const TasksMethodologyData: ITaskData[] = [
-  ...TasksBiciescapa,
-  ...TasksFlick,
-];
+export const TasksMethodologyData: ITaskData[] = [...TasksBiciescapa];

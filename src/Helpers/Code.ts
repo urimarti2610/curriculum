@@ -22,4 +22,5 @@ export enum Code {
   WEBPACK = "Webpack",
   REDUX = "Redux",
   BABEL = "Babel",
+  WORDPRESS = "WordPress",
 }

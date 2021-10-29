@@ -7,6 +7,7 @@ export enum Color {
   INFO = "info",
 }
 
-export const getColor = (knowledge:KnowledgeType) => Object.values(Color)[getColorKnowledge(knowledge)]
+export const getColor = (knowledge: KnowledgeType) =>
+  Object.values(Color)[getColorKnowledge(knowledge)];
 
-export const getColorsLength = () => Object.values(Color).length
+export const getColorsLength = () => Object.values(Color).length;

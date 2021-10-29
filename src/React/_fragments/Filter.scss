@@ -1,0 +1,46 @@
+@import '../../style/variables.scss';
+@import '../../style/colors.scss';
+
+.list {
+    &.light {
+        padding: $padding;
+    }
+
+    width: 100%;
+    text-align: center;
+
+    .btn:not(:last-child) {
+        margin-right: $padding / 4
+    }
+
+    &>span,
+    &>li {
+        display: inline-block;
+        position: relative;
+        padding: $padding;
+        padding-right: $padding * 2;
+    }
+
+    &>span {
+        margin-bottom: $padding;
+    }
+
+    .select {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        padding: $padding / 2;
+
+        svg.active path {
+            color: $color-info;
+        }
+
+        &.ASC {
+            top: 0;
+        }
+
+        &.DESC {
+            bottom: 0;
+        }
+    }
+}

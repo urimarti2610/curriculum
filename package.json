@@ -6,11 +6,15 @@
     "scripts": {
         "start": "webpack --mode development",
         "watch": "webpack --mode development -w",
+        "watch_build": "webpack --mode production -w",
         "build": "webpack --mode production"
     },
     "author": "Oriol Martí",
     "license": "ISC",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.36",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@fortawesome/react-fontawesome": "^0.1.16",
         "@types/aos": "^3.0.4",
         "@types/react": "^17.0.33",
         "@types/react-dom": "^17.0.10",

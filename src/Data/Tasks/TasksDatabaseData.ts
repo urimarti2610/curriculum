@@ -41,7 +41,20 @@ const TasksFlick: ITaskData[] = [
   },
 ];
 
+const TasksSauc: ITaskData[] = [
+  {
+    type,
+    job: JobList.SAUC,
+    name: "Base de Datos de Monitores",
+    description:
+      "Creación y mantenimiento de una base de datos con todos los monitores para gestión de sustituciones y contrataciones",
+    liked: false,
+  },
+];
+
+
 export const TasksDatabaseData: ITaskData[] = [
   ...TasksBiciescapa,
   ...TasksFlick,
+  ...TasksSauc,
 ];

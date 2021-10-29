@@ -42,4 +42,31 @@ const TasksFlick: ITaskData[] = [
   },
 ];
 
-export const TasksDesignData: ITaskData[] = [...TasksBiciescapa, ...TasksFlick];
+const TasksSauc: ITaskData[] = [
+  {
+    type,
+    job: JobList.SAUC,
+    name: "Creación de Newsletters",
+    description:
+      "Diseño y maquetación de todos los newsletters.",
+    liked: false,
+  },
+  {
+    type,
+    job: JobList.SAUC,
+    name: "Creación de Bánners",
+    description:
+      "Creación y publicación de todos los bánners, carteles y cartelería de la empresa. Tanto online como físico.",
+    liked: false,
+  },
+  {
+    type,
+    job: JobList.SAUC,
+    name: "Creación de Rollups",
+    description:
+      "Diseño y montaje de distintos rollups que necesitó la cooperativa",
+    liked: false,
+  },
+];
+
+export const TasksDesignData: ITaskData[] = [...TasksBiciescapa, ...TasksFlick, ...TasksSauc];

@@ -1,6 +1,7 @@
 import { JobList } from "../../Helpers/JobList";
 import { KnowledgeType } from "../../Helpers/KnowledgeType";
 import { ITaskData } from "../../Interfaces/Data/ITaskData";
+import { ITask } from "../../Interfaces/React/Task";
 
 const type = KnowledgeType.CODE;
 
@@ -77,5 +78,23 @@ const TasksFlick: ITaskData[] = [
   },
 ];
 
+const TasksSauc: ITaskData[] = [
+  {
+    type,
+    name: "Google Analytics",
+    description:
+      "Configuración y parametrización de Google Analytics dentro de la página web y en la misma plataforma de Google.",
+    job: JobList.SAUC,
+    liked: false,
+  },
+  {
+    type,
+    name: "Página web en Wordpress",
+    description:
+      "Creación de la página web en wordpress de la cooperativa para informar de los servicios que ofrecíamos.",
+    job: JobList.SAUC,
+    liked: false,
+  },
+];
 
-export const TasksCodeData: ITaskData[] = [...TasksBiciescapa, ...TasksFlick];
+export const TasksCodeData: ITaskData[] = [...TasksBiciescapa, ...TasksFlick, ...TasksSauc];
