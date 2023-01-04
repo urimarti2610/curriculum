@@ -7,7 +7,7 @@ export const KnowledgeElement = (props: IKnowledge) => {
   const [knowledge] = React.useState(props.knowledge);
 
   return (
-    <div className="knowledge" data-aos="fade-left" >
+    <div className="knowledge">
       <Tag tag={knowledge.type} />
       <h4>{knowledge.name}</h4>
       <h5>{knowledge.from.substr(0,4)} ({knowledge.years} años)</h5>

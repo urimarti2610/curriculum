@@ -4,10 +4,7 @@ import React from "react";
 
 export const Title = (props: ITitle) => (
   <React.Fragment>
-    <h2
-      className="title-button"
-      onClick={() => (document.documentElement.scrollTop += window.innerHeight)}
-    >
+    <h2 className="title-button">
       {props.title}
     </h2>
   </React.Fragment>

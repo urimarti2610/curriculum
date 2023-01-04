@@ -28,7 +28,7 @@ export const TaskList = (props: ITasks) => {
         const color = taskList[0].color
         return (
           <div className="task-group" key={type}>
-            <span data-aos="fade-right"
+            <span
               className={`title ${color}`}
               onClick={() => swapActive(type)}
             >

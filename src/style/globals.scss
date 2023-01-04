@@ -1,194 +1,48 @@
-body {
+body,
+#app {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-normal;
     padding: 0;
     margin: 0;
-    min-height: 100%;
-    width: 100%;
-    overflow-x: hidden;
 
-    section {
-        overflow-x: hidden;
-        background-color: $bg-color;
-        color: $font-color;
-        font-family: $font-family;
-        font-weight: $font-normal;
-        padding: 0;
-        margin: 0;
-        min-height: 100%;
-        width: 100%;
-        font-size: $font-size;
-        line-height: $line-height;
+    >section {
+        color: $font-color-themeLight;
+        background-color: $bg-color-themeLight;
 
-        *,
-        *:active,
-        *:visited {
-            color: $font-color;
-        }
-
-        .light {
-            background: $bg-color-light;
-        }
-
-        .menu-left {
-            padding: $padding;
-        }
-
-        .main {
-            padding: $padding;
-            padding-bottom: $padding * 3;
-            width: $width;
-            max-width: 90%;
-        }
-
-        &.theme-light {
-
-            *,
-            *:active,
-            *:visited {
-                color: $font-color-themeLight;
-            }
-
-            background-color: $bg-color-themeLight;
+        a {
             color: $font-color-themeLight;
+            background-color: $bg-color-themeLight;
+            text-decoration: none;
+        }
 
-            .light {
-                background: $bg-color-light-themeLight;
+        &.theme-dark {
+            color: $font-color-themeDark;
+            background-color: $bg-color-themeDark;
+
+            a {
+                color: $font-color-themeDark;
+                background-color: $bg-color-themeDark;
             }
 
             .btn {
                 &.btn-primary {
-                    color: $font-color;
-                    background-color: $bg-color;
-    
-                    &:hover {
-                        color: $bg-color;
-                        background-color: $font-color
-                    }
-                }
-    
-                &.btn-seconday {
-                    background-color: $font-color;
-                    color: $bg-color;
-    
-                    &:hover {
-                        background-color: $bg-color;
-                        color: $font-color
-                    }
+                    background-color: $bg-color-light-themeLight;
+                    color: $font-color-themeLight;
                 }
             }
-    
         }
 
-
         .btn {
-            padding: $padding-btn;
-            border-radius: $border-radius-btn;
-            display: inline-block;
             border: 1px solid;
-            transition: 0.2s ease all;
+            padding: 1em 1.5em !important;
+            border-radius: 1em;
             cursor: pointer;
 
             &.btn-primary {
-                background-color: $font-color;
-                color: $bg-color;
-
-                &:hover {
-                    background-color: $bg-color;
-                    color: $font-color
-                }
+                background-color: $bg-color-light-themeDark;
+                color: $font-color-themeDark;
             }
-
-            &.btn-seconday {
-                color: $font-color;
-                background-color: $bg-color;
-
-                &:hover {
-                    color: $bg-color;
-                    background-color: $font-color
-                }
-            }
-        }
-
-        .float-right {
-            float: right;
-            margin-left: auto;
-        }
-
-        .flex {
-            display: flex;
-
-            &.align-center {
-                align-items: center;
-            }
-
-            &.justify-center {
-                justify-content: center;
-            }
-
-            &.wrap {
-                flex-wrap: wrap;
-            }
-        }
-
-        .w-100 {
-            width: 100%;
-        }
-
-        .justify {
-            text-align: justify;
-        }
-
-        .success,
-        .success > * {
-            color: $color-success !important;
-        }
-
-        .info,
-        .info > * {
-            color: $color-info !important;
-        }
-
-        .danger,
-        .danger > * {
-            color: $color-danger !important;
-        }
-
-        .warning,
-        .warning > * {
-            color: $color-warning !important;
-        }
-
-        h1 {
-            font-size: 2.9 * $font-size;
-        }
-
-        h2 {
-            font-size: 2.6 * $font-size;
-        }
-
-        h3 {
-            font-size: 2.5 * $font-size;
-        }
-
-        h4 {
-            font-size: 2 * $font-size;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5 {
-            margin: $padding / 4 0;
-            line-height: 1eM;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        .page {
-            max-width: 90%;
-            margin: 0 auto;
         }
     }
 }

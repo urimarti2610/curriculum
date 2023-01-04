@@ -1,7 +1,6 @@
 import { JobList } from "../../Helpers/JobList";
 import { KnowledgeType } from "../../Helpers/KnowledgeType";
 import { ITaskData } from "../../Interfaces/Data/ITaskData";
-import { ITask } from "../../Interfaces/React/Task";
 
 const type = KnowledgeType.CODE;
 

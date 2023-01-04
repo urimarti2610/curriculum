@@ -1,3 +1,4 @@
+import "./Contact.scss";
 import { faCodeBranch, faEnvelope, faExternalLinkAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -6,7 +7,7 @@ import { IUser } from "../../Interfaces/React/User";
 export const Contact = (props: IUser) => {
   const [user] = React.useState(props.user);
   return (
-    <ul className="list light flex align-center justify-center wrap">
+    <ul id="contact">
       <li>
         {user.birthday} <small>({user.age} años)</small>
       </li>

@@ -5,7 +5,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
     grid-gap: $padding;
+    height: 60vh;
+    overflow-y: auto;
+    margin-bottom: 5em;
+    position: relative;
 
     .knowledge {
         position: relative;

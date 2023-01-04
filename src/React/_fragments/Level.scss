@@ -6,7 +6,7 @@ section {
         width: 100%;
         height: $padding;
         position: relative;
-        background-color: $bg-color-light;
+        background-color: $bg-color-light-themeLight;
 
         .percent {
             position: absolute;
@@ -17,9 +17,9 @@ section {
         }
     }
 
-    &.theme-light {
+    &.theme-dark {
         .level {
-            background-color: $bg-color-light-themeLight;
+            background-color: $bg-color-light-themeDark;
         }
     }
 }

@@ -49,9 +49,7 @@ export const FilterOrder = (props: IFilterOrder) => {
 
   return (
     <div className="list">
-      <h5>
-        <FontAwesomeIcon icon={faSort} /> Ordenar por:
-      </h5>
+      <h5 style={{display: "inline"}}><FontAwesomeIcon icon={faSort} /> Ordenar por:</h5>
       {renderList()}
     </div>
   );

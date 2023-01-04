@@ -1,14 +1,9 @@
 @import '../../style/variables.scss';
 
 .page {
-    padding-top: 40vh;
-    padding-bottom: 10vh;
-    min-height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
-    max-width: $width;
+    width: $width;
     margin: 0 auto;
     position: relative;
+    max-width: 90%;
+    padding: 1em 0;
 }

@@ -9,11 +9,10 @@ export const Person = (props: IUser) => {
   return (
     <React.Fragment>
       <Name user={user} />
-      <Contact user={user} />
-      <div
-        className="justify"
-        dangerouslySetInnerHTML={{ __html: user.description }}
-      />
+      <div id="person">
+        <Contact user={user} />
+        <div dangerouslySetInnerHTML={{ __html: user.description }}/>
+      </div>
     </React.Fragment>
   );
 };

@@ -2,20 +2,5 @@
 @import '../../style/variables.scss';
 
 .title-button {
-    position: relative;
-    cursor: pointer;
-
-    &::before {
-        cursor: pointer;
-        content: '';
-        position: absolute;
-        border-left: 1px solid;
-        border-bottom: 1px solid;
-        transform: rotate(-45deg) translate(-50%, -50%);
-        color: $font-color;
-        bottom: - $padding;
-        left: 50%;
-        width: $padding / 2;
-        height: $padding / 2;
-    }
+    text-align: center;
 }
