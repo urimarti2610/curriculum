@@ -16,8 +16,8 @@ export const Body = (props: IBody) => {
     <section className={bodyClass}>
       <ToggleTemplate parentClick={updateBodyClass} />
       <Description user={user} />
-      <Jobs jobs={user.jobs} />
       <Knowledges knowledges={user.knowledge} />
+      <Jobs jobs={user.jobs} />
     </section>
   );
 };

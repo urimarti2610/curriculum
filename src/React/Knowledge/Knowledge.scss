@@ -4,7 +4,7 @@
 .knowledge-list {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: $padding;
     height: 60vh;
@@ -23,6 +23,6 @@
 
 @media screen and (max-width: 768px) {
     .knowledge-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }

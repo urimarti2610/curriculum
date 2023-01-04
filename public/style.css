@@ -51,6 +51,11 @@ body,
       #app > section .btn.btn-primary {
         background-color: #252526;
         color: #e5e5e5; }
+    body > section h4,
+    body > section h5,
+    #app > section h4,
+    #app > section h5 {
+      margin: 0.5em 0; }
 
 /*!*****************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/React/_fragments/ToggleTemplate.scss ***!
@@ -119,7 +124,7 @@ body,
 .knowledge-list {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 1.5eM;
   height: 60vh;
@@ -133,7 +138,7 @@ body,
 
 @media screen and (max-width: 768px) {
   .knowledge-list {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr 1fr; } }
 
 /*!********************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/React/_fragments/Level.scss ***!
@@ -157,11 +162,10 @@ section.theme-dark .level {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/React/_fragments/Tag.scss (1) ***!
   \**********************************************************************************************************************************************************************/
 .tag {
-  padding: 0.5eM 0.8eM;
-  border: 1px solid;
   border-radius: 3px;
   position: absolute;
-  right: 1.5eM;
+  top: 0.5eM;
+  right: 0.5eM;
   font-size: 8px; }
 
 /*!*********************************************************************************************************************************************************************!*\
