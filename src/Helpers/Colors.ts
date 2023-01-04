@@ -1,4 +1,4 @@
-import { getColorKnowledge, KnowledgeType } from "./KnowledgeType";
+import { getColorKnowledge, KnowledgeType } from "./KnowledgeType"
 
 export enum Color {
   SUCCESS = "success",
@@ -8,6 +8,6 @@ export enum Color {
 }
 
 export const getColor = (knowledge: KnowledgeType) =>
-  Object.values(Color)[getColorKnowledge(knowledge)];
+  Object.values(Color)[getColorKnowledge(knowledge)]
 
-export const getColorsLength = () => Object.values(Color).length;
+export const getColorsLength = () => Object.values(Color).length

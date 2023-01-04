@@ -1,8 +1,8 @@
-import { JobList } from "../../Helpers/JobList";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { ITaskData } from "../../Interfaces/Data/ITaskData";
+import { JobList } from "../../Helpers/JobList"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { ITaskData } from "../../Interfaces/Data/ITaskData"
 
-const type = KnowledgeType.CODE;
+const type = KnowledgeType.CODE
 
 const TasksBiciescapa: ITaskData[] = [
   {
@@ -43,7 +43,7 @@ const TasksBiciescapa: ITaskData[] = [
     job: JobList.BICIESCAPA,
     liked: false,
   },
-];
+]
 
 const TasksFlick: ITaskData[] = [
   {
@@ -75,7 +75,7 @@ const TasksFlick: ITaskData[] = [
     job: JobList.FLICK,
     liked: false,
   },
-];
+]
 
 const TasksSauc: ITaskData[] = [
   {
@@ -94,6 +94,6 @@ const TasksSauc: ITaskData[] = [
     job: JobList.SAUC,
     liked: false,
   },
-];
+]
 
-export const TasksCodeData: ITaskData[] = [...TasksBiciescapa, ...TasksFlick, ...TasksSauc];
+export const TasksCodeData: ITaskData[] = [...TasksBiciescapa, ...TasksFlick, ...TasksSauc]

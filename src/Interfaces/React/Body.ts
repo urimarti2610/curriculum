@@ -1,4 +1,4 @@
-import User from "../../Models/User";
+import User from "../../Models/User"
 
 export interface IBody {
     bodyClass: string,
@@ -10,9 +10,20 @@ export interface IClick {
 }
 
 export interface IChildren {
-    children: any
+    id: string
+    children: any,
 }
 
 export interface ITitle {
     title: string
+}
+
+export interface IMenu {
+    links: IMenuItem[]
+}
+
+export interface IMenuItem {
+    id: string,
+    name: string,
+    active: boolean
 }

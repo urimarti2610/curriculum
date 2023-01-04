@@ -1,28 +1,28 @@
-import "./Task.scss";
-import React from "react";
-import { ITasks } from "../../Interfaces/React/Task";
-import { TaskElement } from "./TaskElement";
-import { getKnowledgeTypes } from "../../Helpers/KnowledgeType";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import "./Task.scss"
+import React from "react"
+import { ITasks } from "../../Interfaces/React/Task"
+import { TaskElement } from "./TaskElement"
+import { getKnowledgeTypes } from "../../Helpers/KnowledgeType"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 export const TaskList = (props: ITasks) => {
-  const [tasks, setTasks] = React.useState(props.tasks);
-  const taskTipes = getKnowledgeTypes();
+  const [tasks, setTasks] = React.useState(props.tasks)
+  const taskTipes = getKnowledgeTypes()
 
   const swapActive = (type: any) =>
     setTasks(
       tasks.map((task, i) => {
         if (task.type === type) {
-          task.open = !task.open;
+          task.open = !task.open
         }
-        return task;
+        return task
       })
-    );
+    )
 
   const renderTasks = () => {
     return taskTipes.map((type) => {
-      const taskList = tasks.filter((v) => v.type === type);
+      const taskList = tasks.filter((v) => v.type === type)
       if (taskList.length) {
         const open = taskList[0].open
         const color = taskList[0].color
@@ -40,10 +40,10 @@ export const TaskList = (props: ITasks) => {
               ) : null
             )}
           </div>
-        );
+        )
       }
-    });
-  };
+    })
+  }
 
-  return <div className="task-list">{renderTasks()}</div>;
-};
+  return <div className="task-list">{renderTasks()}</div>
+}

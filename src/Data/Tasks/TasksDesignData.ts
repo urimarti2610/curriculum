@@ -1,8 +1,8 @@
-import { JobList } from "../../Helpers/JobList";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { ITaskData } from "../../Interfaces/Data/ITaskData";
+import { JobList } from "../../Helpers/JobList"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { ITaskData } from "../../Interfaces/Data/ITaskData"
 
-const type = KnowledgeType.DESIGN;
+const type = KnowledgeType.DESIGN
 
 const TasksBiciescapa: ITaskData[] = [
   {
@@ -21,7 +21,7 @@ const TasksBiciescapa: ITaskData[] = [
       "He creado muchos bánners para la página web, para la tienda y para anuncios publicitarios tanto online como físicos.",
     liked: false,
   },
-];
+]
 
 const TasksFlick: ITaskData[] = [
   {
@@ -40,7 +40,7 @@ const TasksFlick: ITaskData[] = [
       "Creación y publicación de todos los bánners, carteles y cartelería de la empresa. Tanto online como físico.",
     liked: false,
   },
-];
+]
 
 const TasksSauc: ITaskData[] = [
   {
@@ -67,6 +67,6 @@ const TasksSauc: ITaskData[] = [
       "Diseño y montaje de distintos rollups que necesitó la cooperativa",
     liked: false,
   },
-];
+]
 
-export const TasksDesignData: ITaskData[] = [...TasksBiciescapa, ...TasksFlick, ...TasksSauc];
+export const TasksDesignData: ITaskData[] = [...TasksBiciescapa, ...TasksFlick, ...TasksSauc]

@@ -1,8 +1,8 @@
-import { Code } from "../../Helpers/Code";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData";
+import { Code } from "../../Helpers/Code"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData"
 
-const type = KnowledgeType.LAYOUT;
+const type = KnowledgeType.LAYOUT
 
 export const layoutsData: IKnowledgeData[] = [
   {
@@ -53,4 +53,4 @@ export const layoutsData: IKnowledgeData[] = [
     level: 4,
     years: "2019-01-01",
   },
-];
+]

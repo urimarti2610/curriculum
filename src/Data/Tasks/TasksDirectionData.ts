@@ -1,10 +1,10 @@
-import { JobList } from "../../Helpers/JobList";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { ITaskData } from "../../Interfaces/Data/ITaskData";
+import { JobList } from "../../Helpers/JobList"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { ITaskData } from "../../Interfaces/Data/ITaskData"
 
-const type = KnowledgeType.DIRECTION;
+const type = KnowledgeType.DIRECTION
 
-const TasksBiciescapa: ITaskData[] = [];
+const TasksBiciescapa: ITaskData[] = []
 
 const TasksSauc: ITaskData[] = [
   {
@@ -21,7 +21,7 @@ const TasksSauc: ITaskData[] = [
     description:
       "Gestión de presupuestos y financiación de la inversión de la cooperativa",
   },
-];
+]
 
 const TasksFlick: ITaskData[] = [
   {
@@ -39,10 +39,10 @@ const TasksFlick: ITaskData[] = [
       "Buscar las mejores empresas para los servicios que se subcontrataban. Tales como anuncios online, generación de contenido para el Blog, Social Media...",
     liked: false,
   },
-];
+]
 
 export const TasksDirectionData: ITaskData[] = [
   ...TasksBiciescapa,
   ...TasksFlick,
   ...TasksSauc,
-];
+]

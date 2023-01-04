@@ -1,8 +1,8 @@
-import { JobList } from "../../Helpers/JobList";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { ITaskData } from "../../Interfaces/Data/ITaskData";
+import { JobList } from "../../Helpers/JobList"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { ITaskData } from "../../Interfaces/Data/ITaskData"
 
-const type = KnowledgeType.DATABASE;
+const type = KnowledgeType.DATABASE
 
 const TasksBiciescapa: ITaskData[] = [
   {
@@ -13,7 +13,7 @@ const TasksBiciescapa: ITaskData[] = [
       "Desde el Google DataStudio he hecho diferentes informes para poder tener en un vistazo rápido los KPIs actualizados de forma automática. Cogiendo los datos de Analytics, Ads, Shopping y MySQL.",
     liked: false,
   },
-];
+]
 
 const TasksFlick: ITaskData[] = [
   {
@@ -39,7 +39,7 @@ const TasksFlick: ITaskData[] = [
       "Volcado masivo de los productos a través de CSV generados manualmente con herramientas propias. Además de subir todas las fotos - retocadas - al e-commerce.",
     liked: false,
   },
-];
+]
 
 const TasksSauc: ITaskData[] = [
   {
@@ -50,11 +50,11 @@ const TasksSauc: ITaskData[] = [
       "Creación y mantenimiento de una base de datos con todos los monitores para gestión de sustituciones y contrataciones",
     liked: false,
   },
-];
+]
 
 
 export const TasksDatabaseData: ITaskData[] = [
   ...TasksBiciescapa,
   ...TasksFlick,
   ...TasksSauc,
-];
+]

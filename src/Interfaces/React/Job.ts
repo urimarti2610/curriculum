@@ -1,9 +1,9 @@
-import Job from "../../Models/Job";
+import Job from "../../Models/Job"
 
 export interface IJobs {
-  jobs: Job[];
+  jobs: Job[]
 }
 
 export interface IJob {
-  job: Job;
+  job: Job
 }

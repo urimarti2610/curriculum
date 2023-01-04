@@ -9,5 +9,5 @@ export enum OrderWay {
   DESC = "DESC",
 }
 
-export const getOrderBy = () => Object.values(OrderBy);
-export const getOrderWay = () => Object.values(OrderWay);
+export const getOrderBy = () => Object.values(OrderBy)
+export const getOrderWay = () => Object.values(OrderWay)

@@ -1,6 +1,6 @@
-import { Code } from "../../Helpers/Code";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData";
+import { Code } from "../../Helpers/Code"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData"
 
 const type = KnowledgeType.DATABASE
 
@@ -29,4 +29,4 @@ export const databasesData: IKnowledgeData[] = [
     level: 5,
     years: "2004-01-01",
   },
-];
+]

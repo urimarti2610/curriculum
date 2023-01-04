@@ -1,11 +1,11 @@
-import "./Contact.scss";
-import { faCodeBranch, faEnvelope, faExternalLinkAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-import { IUser } from "../../Interfaces/React/User";
+import "./Contact.scss"
+import { faCodeBranch, faEnvelope, faExternalLinkAlt, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react"
+import { IUser } from "../../Interfaces/React/User"
 
 export const Contact = (props: IUser) => {
-  const [user] = React.useState(props.user);
+  const [user] = React.useState(props.user)
   return (
     <ul id="contact">
       <li>
@@ -24,5 +24,5 @@ export const Contact = (props: IUser) => {
         <a target="_blank" href={user.linkedin}><FontAwesomeIcon icon={faExternalLinkAlt} /> LinkedIN</a>
       </li>
     </ul>
-  );
-};
+  )
+}

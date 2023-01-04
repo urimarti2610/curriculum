@@ -1,4 +1,4 @@
-import { JobList } from "../../Helpers/JobList";
+import { JobList } from "../../Helpers/JobList"
 
 export interface IobjectJob {
     name: JobList,

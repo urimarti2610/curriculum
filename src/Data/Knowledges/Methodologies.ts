@@ -1,6 +1,6 @@
-import { Methodology } from "../../Helpers/Methodology";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData";
+import { Methodology } from "../../Helpers/Methodology"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData"
 
 const type = KnowledgeType.METHODOLOGY
 

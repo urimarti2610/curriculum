@@ -1,9 +1,9 @@
-import Task from "../../Models/Task";
+import Task from "../../Models/Task"
 
 export interface ITasks {
-  tasks: Task[];
+  tasks: Task[]
 }
 
 export interface ITask {
-  task: Task;
+  task: Task
 }

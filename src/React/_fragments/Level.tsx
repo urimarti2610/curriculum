@@ -1,6 +1,6 @@
-import "./Level.scss";
-import { ILevel } from "../../Interfaces/React/Fragments";
-import React from "react";
+import "./Level.scss"
+import { ILevel } from "../../Interfaces/React/Fragments"
+import React from "react"
 
 export const Level = (props: ILevel) => (
   <div className="level">
@@ -9,4 +9,4 @@ export const Level = (props: ILevel) => (
       style={{ width: (props.level / 5) * 100 + "%" }}
     ></div>
   </div>
-);
+)

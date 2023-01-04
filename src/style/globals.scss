@@ -1,3 +1,14 @@
+@mixin light-theme {
+    color: $font-color-themeLight;
+    background-color: $bg-color-themeLight;
+}
+
+@mixin dark-theme {
+    color: $font-color-themeDark;
+    background-color: $bg-color-themeDark;
+}
+
+
 body,
 #app {
     font-family: $font-family;
@@ -7,29 +18,45 @@ body,
     margin: 0;
 
     >section {
-        color: $font-color-themeLight;
-        background-color: $bg-color-themeLight;
+        @include light-theme();
+
+        #menu {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: $bg-color-themeLight;
+            box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+
+            span {
+                padding: $padding;
+                cursor: pointer;
+
+                &.active {
+                    @include dark-theme();
+                }
+            }
+        }
+
 
         a {
-            color: $font-color-themeLight;
-            background-color: $bg-color-themeLight;
+            @include light-theme();
             text-decoration: none;
         }
 
         &.theme-dark {
-            color: $font-color-themeDark;
-            background-color: $bg-color-themeDark;
+            @include dark-theme();
 
-            a {
-                color: $font-color-themeDark;
-                background-color: $bg-color-themeDark;
+            a,
+            #menu {
+                @include dark-theme();
             }
 
-            .btn {
-                &.btn-primary {
-                    background-color: $bg-color-light-themeLight;
-                    color: $font-color-themeLight;
-                }
+            .btn.btn-primary,
+            #menu .active {
+                @include light-theme();
             }
         }
 
@@ -40,8 +67,7 @@ body,
             cursor: pointer;
 
             &.btn-primary {
-                background-color: $bg-color-light-themeDark;
-                color: $font-color-themeDark;
+                @include dark-theme();
             }
         }
 

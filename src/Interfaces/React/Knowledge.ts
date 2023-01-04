@@ -1,9 +1,9 @@
-import Knowledge from "../../Models/Knowledge";
+import Knowledge from "../../Models/Knowledge"
 
 export interface IKnowledges {
-  knowledges: Knowledge[];
+  knowledges: Knowledge[]
 }
 
 export interface IKnowledge {
-  knowledge: Knowledge;
+  knowledge: Knowledge
 }

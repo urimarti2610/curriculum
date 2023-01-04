@@ -1,10 +1,10 @@
-import { IUser } from "../../Interfaces/React/User";
-import React from "react";
-import { Name } from "./Name";
-import { Contact } from "./Contact";
+import { IUser } from "../../Interfaces/React/User"
+import React from "react"
+import { Name } from "./Name"
+import { Contact } from "./Contact"
 
 export const Person = (props: IUser) => {
-  const [user] = React.useState(props.user);
+  const [user] = React.useState(props.user)
 
   return (
     <React.Fragment>
@@ -14,5 +14,5 @@ export const Person = (props: IUser) => {
         <div dangerouslySetInnerHTML={{ __html: user.description }}/>
       </div>
     </React.Fragment>
-  );
-};
+  )
+}

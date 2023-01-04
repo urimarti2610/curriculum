@@ -21,10 +21,15 @@ export const KnowledgeList = (props: IKnowledges) => {
   }
 
   React.useEffect(() => {
-    filterData()
-    sortData()
     reloadData()
-  }, [filterType, filterOrderWay, filterOrderBy])
+    sortData()
+
+  }, [filterOrderWay, filterOrderBy])
+
+  React.useEffect(() => {
+    reloadData()
+    filterData()
+  }, [filterType])
 
   const setFiltersOrder = (orderBy: OrderBy, orderWay: OrderWay) => {
     setFilterOrderBy(orderBy)
@@ -34,36 +39,25 @@ export const KnowledgeList = (props: IKnowledges) => {
   const filterData = () =>
     setKnowledges(
       knowledges.map((v) => {
-        v.visible =
-          v.type === filterType || filterType === KnowledgeType.ALL
-            ? true
-            : false
+        v.visible = v.type === filterType || filterType === KnowledgeType.ALL
         return v
       })
     )
 
-  const sortData = () => setKnowledges(filterOrderWay === OrderWay.DESC ? sortASC() : sortDESC())
+  const sortData = () => setKnowledges(filterOrderWay === OrderWay.ASC ? sortAsc() : sortDesc())
 
-  const sortDESC = () => knowledges.sort((a, b) => a[filterOrderBy] > b[filterOrderBy] ? 1 : b[filterOrderBy] > a[filterOrderBy] ? -1 : 0)
+  const sortAsc = () => knowledges.sort((a, b) => a[filterOrderBy] > b[filterOrderBy] ? 1 : b[filterOrderBy] > a[filterOrderBy] ? -1 : 0)
 
-  const sortASC = () => knowledges.sort((a, b) => a[filterOrderBy] > b[filterOrderBy] ? -1 : b[filterOrderBy] > a[filterOrderBy] ? 1 : 0)
+  const sortDesc = () => knowledges.sort((a, b) => a[filterOrderBy] > b[filterOrderBy] ? -1 : b[filterOrderBy] > a[filterOrderBy] ? 1 : 0)
 
   const renderKnowledges = () => knowledges.map((value, index) => value.visible ? <KnowledgeElement key={index} knowledge={value} /> : null)
 
   return (
     <React.Fragment>
-      <FilterTypes
-        filterType={filterType}
-        knowledges={knowledges}
-        setFiltersType={setFilterType}
-      />
-      <FilterOrder
-        orderBy={filterOrderBy}
-        orderWay={filterOrderWay}
-        setFiltersOrder={setFiltersOrder}
-      />
+      <FilterTypes filterType={filterType} knowledges={knowledges} setFiltersType={setFilterType} />
+      <FilterOrder orderBy={filterOrderBy} orderWay={filterOrderWay} setFiltersOrder={setFiltersOrder} />
       <div className="knowledge-list">
-        {loading ? <Loading/> : renderKnowledges()}
+        {loading ? <Loading /> : renderKnowledges()}
       </div>
     </React.Fragment>
   )

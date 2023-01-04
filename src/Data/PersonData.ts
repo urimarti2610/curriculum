@@ -1,4 +1,4 @@
-import { IPersonData } from "../Interfaces/Data/IPersonData";
+import { IPersonData } from "../Interfaces/Data/IPersonData"
 
 export const personData:IPersonData = {
   name: "Oriol",
@@ -12,4 +12,4 @@ export const personData:IPersonData = {
     <p>Siempre me involucro en los proyectos como si fueran míos.</p>
     <p>Empecé a programar a los 12 años. Desde entonces me apasiona programar y nunca he dejado de aprender ni de querer conocer más lenguajes de programación.</p>
     <p>Mi máxima es poder disfrutar de las personas que me rodean. Poder aportar mi grano de arena para que sean mejores y más felices.</p>`,
-};
+}

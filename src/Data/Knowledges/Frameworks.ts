@@ -1,8 +1,8 @@
-import { Code } from "../../Helpers/Code";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData";
+import { Code } from "../../Helpers/Code"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData"
 
-const type = KnowledgeType.FRAMEWORK;
+const type = KnowledgeType.FRAMEWORK
 
 export const frameworksData: IKnowledgeData[] = [
   {
@@ -41,4 +41,4 @@ export const frameworksData: IKnowledgeData[] = [
     level: 2,
     years: "2018-01-01",
   },
-];
+]

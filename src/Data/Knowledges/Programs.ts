@@ -1,8 +1,8 @@
-import { Program } from "../../Helpers/Program";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData";
+import { Program } from "../../Helpers/Program"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { IKnowledgeData } from "../../Interfaces/Data/IKnowledgeData"
 
-const type = KnowledgeType.PROGRAM;
+const type = KnowledgeType.PROGRAM
 
 export const programsData: IKnowledgeData[] = [
   {
@@ -29,4 +29,4 @@ export const programsData: IKnowledgeData[] = [
     level: 5,
     years: "2009-01-01",
   },
-];
+]

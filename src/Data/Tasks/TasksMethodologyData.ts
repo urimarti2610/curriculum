@@ -1,8 +1,8 @@
-import { JobList } from "../../Helpers/JobList";
-import { KnowledgeType } from "../../Helpers/KnowledgeType";
-import { ITaskData } from "../../Interfaces/Data/ITaskData";
+import { JobList } from "../../Helpers/JobList"
+import { KnowledgeType } from "../../Helpers/KnowledgeType"
+import { ITaskData } from "../../Interfaces/Data/ITaskData"
 
-const type = KnowledgeType.METHODOLOGY;
+const type = KnowledgeType.METHODOLOGY
 
 const TasksBiciescapa: ITaskData[] = [
   {
@@ -33,6 +33,6 @@ const TasksBiciescapa: ITaskData[] = [
     description:
       "Reviso siempre el código tanto mío como de mis compañeros una vez se termina el sprint para detectar o mejoras o errores que puedan haber.",
   },
-];
+]
 
-export const TasksMethodologyData: ITaskData[] = [...TasksBiciescapa];
+export const TasksMethodologyData: ITaskData[] = [...TasksBiciescapa]

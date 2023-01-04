@@ -1,4 +1,4 @@
-import { JobList } from "../Helpers/JobList";
+import { JobList } from "../Helpers/JobList"
 
 export const JobsData = [
     {
@@ -29,5 +29,4 @@ export const JobsData = [
       from: "2008-01-01",
       to: "2015-12-31",
     },
-  ];
-  
+  ]
